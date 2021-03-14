@@ -2,7 +2,7 @@ baseURL = "https://fcrbpeter.com/"
 languageCode = "en-us"
 theme = "minimal"
 title = "Peter Chan"
-description = "Code for God | Worship for God"
+enableRobotsTXT = true
 
 [params]
     description = "Code for God | Worship for God"
