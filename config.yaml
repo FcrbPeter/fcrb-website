@@ -1,0 +1,55 @@
+baseUrl: https://fcrbpeter.com
+languageCode: en-us
+theme: hugo-theme-stack
+title: Fcrb Peter
+enableRobotsTXT: true
+
+DefaultContentLanguage: en
+
+params:
+  mainSections:
+    - post
+  featuredImageField: image
+  rssFullContent: true
+  favicon:
+  footer:
+    since: 2021
+    customText: Chan Ping Hung
+  dateFormat:
+    published: 2006-01-02
+    lastUpdated: 2006-01-02
+  sidebar:
+    avatar:
+      local: true
+      src: images/profile_pic.jpg
+  defaultImage:
+    opengraph:
+      enabled: false
+      local: false
+      src:
+  comments:
+    enabled: false
+  imageProcessing:
+    cover:
+      enabled: true
+    content:
+      enabled: true
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: -100
+      pre: home
+    - identifier: github
+      name: Github
+      url: https://github.com/fcrbpeter
+      weight: 0
+      pre: link
+    - identifier: linkedin
+      name: Linkedin
+      url: https://www.linkedin.com/in/fcrbpeter/
+      weight: 0
+      pre: link
+
