@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: FcrbPeter/fcrb-website
+  branch: master
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "project"
+    label: "Projects"
+    folder: "content/project"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string", default: ""}
+      - {label: "Tags", name: "tags", widget: "list", default: []}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "blog"
+    label: "Blogs"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
