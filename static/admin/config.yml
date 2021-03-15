@@ -1,7 +1,8 @@
 backend:
-  name: github
-  repo: FcrbPeter/fcrb-website
-  branch: master
+  name: test-repo
+  # name: github
+  # repo: FcrbPeter/fcrb-website
+  # branch: master
 
 publish_mode: editorial_workflow
 
